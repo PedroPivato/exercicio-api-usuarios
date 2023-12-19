@@ -7,15 +7,15 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/PedroPivato/exercicio-api-usuarios.git'
             }
         }
-                stage('Instalar dependencias') {
+        stage('Instalar dependências') {
             steps {
-               powershell 'npm install'
+                bat 'npm install'
             }
         }
-                stage('Subir ServeRest') {
+        stage('Subir ServeRest e Executar testes') {
             steps {
-               powershell 'npm run cy:run-ci'
+                bat 'set NO_COLOR=1 && npm run cy:run-ci'
             }
         }
-
     }
+}
