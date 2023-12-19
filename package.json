@@ -1,7 +1,7 @@
 {
   "name": "teste-api-cypress",
   "version": "1.0.0",
-  "description": "",
+  "description": "-Node.js - Você encontra em: https://nodejs.org/en/",
   "main": "index.js",
   "scripts": {
     "test": "npm run cy:run",
@@ -15,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^8.2.0",
-    "cypress": "^13.5.0"
+    "cypress": "^13.6.1"
   },
   "dependencies": {
     "cypress-multi-reporters": "^1.5.0",
